@@ -1,0 +1,294 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*LANDING PAGE STYLE*/
+
+.jumbotron{
+     font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  background-color: transparent;
+}
+
+.jumbotron.jumbotron-new{
+     font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  background-color: transparent;
+  margin-top: -5vh;
+}
+
+.vertical-center{
+  margin-top: 15vh;
+}
+
+.fullscreen {
+    height:80vh;
+    width: 100%;
+   /* background: url('../images/header.jpg') no-repeat center center; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    background-color: transparent;
+}
+  html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+html, .site-wrapper{
+  background-color: lightblue;
+}
+
+.fa-quora{
+  margin-top:-0.8vh;
+  color: black;
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+.fa-list{
+   margin-top: 1.7vh;
+  color: black;
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+html{
+  height: 100vh;
+}
+
+
+/*NAVBAR STYLING*/
+
+.topnav, .navbar-fixed-side {
+    font-size: 14px; 
+}
+
+.navbar-default, .navbar-fixed-side{
+    min-height: 60px;
+  }
+
+  .navbar.navbar-footer{
+    min-height: 10vh;
+  }
+
+.navbar-nav, .navbar-fixed-side > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 60px;
+  
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: black;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+
+@media (max-width: 767px) {
+    .navbar-nav > li > a {
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;}
+}
+
+.navbar , .sidebar {
+    -webkit-box-shadow: 0 8px 6px -6px #bfbfbf;
+    -moz-box-shadow: 0 8px 6px -6px #bfbfbf;
+    box-shadow: 0 8px 6px -6px #bfbfbf;
+}
+
+
+/*BUTTON STYLE*/
+
+.btn {
+    padding: 7px 13px;
+    border: 0 none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: black;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: grey;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: grey;
+    box-shadow: none;
+}
+
+.btn.sharp {
+  border-radius:0;
+}
+
+.btn-padding{
+  margin-top: 10px;
+ }
+
+ .btn-default{
+  margin-right: 30px;
+ }
+
+ 
+/*No bullet points*/
+li{
+  list-style: none;
+}
+
+/*INPUT TEXT FIELD*/
+
+input[type="text"],input[type="email"],input[type="password"],input[type="username"],textarea[class="form-control"],.round-style{
+border-radius: 50px;
+}
+
+input[type="text"],input[type="email"],input[type="password"],input[type="username"],textarea[class="form-control"],.round-style{
+  padding: 8px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+}
+ input[type="text"],input[type="email"],input[type="password"],input[type="username"],textarea[class="form-control"],.round-style:focus,
+ input[type="text"],input[type="email"],input[type="password"],input[type="username"],textarea[class="form-control"],.round-style.focus {
+  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+
+input[type="text"],input[type="email"],input[type="password"],input[type="username"],textarea[class="form-control"],.round-style:focus {
+outline: none;
+}
+
+
+
+/*SPACING*/
+.list-margin{
+    margin-top: 5vh;
+}
+
+.name-style{
+    margin-top: 3vh;
+}
+
+.login-padding{
+  margin-bottom: 20vh;
+}
+
+.tasks-padding{
+  margin-top: 55vh;
+  position: static;
+}
+
+.post-padding{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.navbar-fixed-side{
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none; 
+}
+
+.p-padding{
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.map-style{
+  height: 40vh;
+  width: 25vw;
+  border-radius: 25px;
+  margin-left: 2.8vw;
+}
+
+/*SIDEBAR*/
+
+.sidebar{
+  margin-top: -3vh;
+  margin-left: -5vh;
+  width: 10vw;
+  height:91vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 10vh;
+  border-radius: 0;
+}
+
+.fa-calendar, .fa-list-ul{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.user{
+  margin-top: -10vh;
+  padding-bottom: 50px;
+}
+
+.quora{
+  padding-left: 7px;
+}
+
+/*******************************FOR EVENTS CALENDAR******************************/
+  .fc-event-container {
+  padding: 5px !important;
+}
+
+.fc-event {
+  padding: 5px 10px;
+  border-color: #ddd;
+  background: #fff !important;
+
+  .fc-content {
+    color: #444;
+  }
+
+  h4,
+  h5 {
+    margin: 0;
+    font-weight: normal;
+  }
+
+  h4 {
+    color: #666;
+    font-size: 13px;
+    line-height: 18px;
+    white-space: normal;
+  }
+
+  h5 {
+    color: #888;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .guest-count {
+    margin: 5px 0;
+  }
+
+  p[class^="type-"] {
+    margin: 0;
+  }
+
+  p[class="type-Corporate"] {
+    color: red;
+  }
+
+  p[class="type-Wedding"] {
+    color: green;
+  }
+
+  p[class="type-Birthday"] {
+    color: blue;
+  }
+}

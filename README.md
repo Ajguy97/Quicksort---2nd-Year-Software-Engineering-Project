@@ -1,3 +1,11 @@
-# Quicksort---2nd-Year-Software-Engineering-Project
+# Web Application Project
 
-Web application that organizes tasks and activities with a To do list and tracks progress. User authentication through social media. User interaction with other users by creating a social media page 
+Software Engineering Project
+
+Web Application to monitor chores and track productivity
+
+This project was made MeteorJS and Boostrap 3
+
+Screenshots of the site can be found in the folder 'portfolio'
+
+***Please note that this web application is not live

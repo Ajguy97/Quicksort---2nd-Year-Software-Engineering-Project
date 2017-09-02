@@ -1,0 +1,45 @@
+<template name="aboutUs">
+
+<!-- Container (Services Section) -->
+<div class="container-fluid text-center">
+  <h2><b>ABOUT US</b></h2>
+  <h5>Find out who we are, what we do, and where we do it.</h5>
+  <br>
+    <br>
+      
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="fa fa-user"></span>
+      <h4>WHO</h4>
+      <p class="p-padding">Five students attending National University of Ireland Galway. All studying Computer Science &amp; Information Technology. This Web Application is our group project for our Software Engineering module</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="fa fa-desktop"></span>
+      <h4>WHAT</h4>
+      <p class="p-padding">This Web Application was developped using MeteorJS and Bootstrap-Ui among other web technologies. Quicksort is software to organise your chores and activities to make your life easier. Please Sign Up if you haven't already!</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="fa fa-globe"></span>
+      <h4>WHERE</h4>
+      <div id="googleMap" class="map-style"></div>
+    </div>
+  </div>
+<br>
+<br>
+
+<div class="text-center">
+	<!--<div id="googleMap" style="height:400px;width:100%;"></div>-->
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(53.2766,-9.0616);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr2EyovjK0oF9bE970yLw6ifPJqA9--HU&callback=myMap"></script>
+</div></div>
+
+
+</template>

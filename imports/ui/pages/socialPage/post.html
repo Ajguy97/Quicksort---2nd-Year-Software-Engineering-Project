@@ -1,0 +1,76 @@
+<template name="post">
+<div class="row col-sm-6 col-sm-offset-4 textPost">
+	<div class="row">
+		<div class="well">
+		<!-- ROW FOR TOP PART OF POSTS -->
+			<div class="row">
+				<div class="col-sm-2 pull-left">
+			<!-- {{> avatar userId=createdBy shape="rounded"}} -->
+			<p><b>{{firstName}}&nbsp;{{lastName}}</b></p>
+			</div>
+			<div class="col-sm-3 pull-right">
+				{{timeDiff (date)}}
+			</div>
+
+		</div>
+
+		<!-- ROW FOR POSTS -->
+		<div class="row spacer">
+		<div class="col-sm-12">
+			<input class="form-control hidden" type="text" id="edit{{_id}}" value={{post}}>
+				<div id="post{{_id}}" class="post-padding well">
+				{{post}}
+				</div>
+			</div>
+		</div>
+
+		<!-- NEXT ROW FOR LIKES EDIT AND DELETE -->
+		<!-- LIKE -->
+		<div class="row spacer">
+			<div class="col-xs-3">
+				<div class="likeBox">
+				<input type="checkbox" id="like{{_id}}" checked={{checked (likes.users)}}>
+				<label for="like{{_id}}">
+				{{likes.totalLikes}} Likes
+				</label>
+				</div>
+		</div>	
+		
+
+
+		<!--	<div class="col-xs-3">
+				<div class="sharebox">
+				<input type="checkbox" id="like{{_id}}" checked ={{checked (likes.users)}};
+				<label for="like{{_id}}">
+				{{likes.totalLikes}}
+				</div>
+		</div>	
+		</div>
+		-->
+
+		<!-- DELETE -->
+		<div class="col-xs-3">
+		<a id="deletePost" class="btn">
+			<i class="fa fa-trash" aria-hidden="true">Delete</i>
+			</a>
+
+			</div>
+			<!-- EDIT -->
+		{{#if userCreated (createdBy)}}
+		<div class="col-xs-3 editBox pull-right">
+			<input type="checkbox" id="editPost{{this._id}}">
+			<label for="editPost{{this._id}}">
+			Edit
+			</label>
+		</div>
+		
+		{{/if}}
+	</div>
+
+
+</div>
+
+	</div>
+	</div>
+
+	</template>

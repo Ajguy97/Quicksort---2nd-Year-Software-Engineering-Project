@@ -1,0 +1,58 @@
+<template name="profileDetails">
+    <!-- main col left -->
+    
+    <div class="row">
+          <div align="center" class="hidden xs">
+           Avatar
+              <div>
+                  <label>
+                      <div class="inputWrapper">
+                          <input id="avatar" name="avatar" type="file" class="fileInput change-avatar">
+                       </div>
+                   </label>
+              </div>
+          </div>
+    </div>
+
+    <div class="col-md-4">
+         <div class="panel panel-default">
+           <div class="panel-body">
+             <p class="lead">{{fullName}}&nbsp; <button class="btn btn-primary send-message">Send message</button></p>
+            
+
+        <table class="table table-user-information">
+            <tbody>
+                <tr>
+                    <td><p>{{email}}</p></td>
+                </tr>
+                <!--
+                <tr>
+                    <td><p>{{country}}</p></td>
+                </tr>
+
+                <tr>
+                    <td><p>{{joined}}</p></td>
+                </tr>
+  -->           <tr>
+                    <td><p>Biography:</p></td>
+                </tr>
+               
+
+            </tbody>
+        </table>
+            
+             
+             <p>
+                
+                <!--{{#each newFriends}}
+                    <a href="/profile/{{this.profile.username}}">
+                   <img src="{{this.profile.picture.thumbnail}}" height="28px" width="28px">
+                    </a>
+                {{/each}}
+                -->
+             </p>
+           </div>
+         </div>
+        
+  </div>
+</template>
