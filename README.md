@@ -4,6 +4,6 @@ Web application that organizes tasks and activities with a To do list and tracks
 
 My role was to do most of the back end using MeteorJS. Made the To do list application using nodeJS and used Blaze to render the front end. 
 
-Application not live.
+*Application not live.
 
-Screenshots available in the "screenshots" folder.
+Screenshots available in the "portfolio" folder.
